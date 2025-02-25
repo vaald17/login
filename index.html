@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <title>autorization and registration</title>
-
+    <script>
+        console.log('head');
+    </script>
 
 </head>
 
-<body>
+ <script>
+    console.log('between body and head');
+</script>
+
+    <body>
     <form style="display: inline-grid;" action="autorization.php" method="post">
         Авторизация<br>
         Логин: <input name="login" type="text">
@@ -24,8 +30,12 @@
         Пароль: <input name="password" type="password">
         <input type="submit">
     </form>
+    <script>
+        console.log('body');
+    </script>
 </body>
+    
 <script>
-    console.log(1);
+    console.log('after body');
 </script>
 </html>
